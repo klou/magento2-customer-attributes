@@ -202,7 +202,7 @@ class Save extends \Tangkoko\CustomerAttributesManagement\Controller\Adminhtml\A
                 }
             }
 
-            if ($attributeCode) {
+            if ($attributeId) {
                 if (!$model->getId()) {
                     $this->messageManager->addErrorMessage(__('This attribute no longer exists.'));
                     return $this->returnResult('cam/*/', [], ['error' => true]);
